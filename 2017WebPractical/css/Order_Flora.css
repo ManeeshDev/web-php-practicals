@@ -1,0 +1,91 @@
+*{
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+table{
+	width:650px;
+	/*border: 1px solid #000;*/
+	padding: 0px 10px 30px 40px;
+	background-color: #555;
+	color: white;
+}
+
+td{
+	/*border: 1px solid #000;*/
+	padding: 0px 0px 5px 0px;
+}
+
+.footr{
+	background-color: #ccc;
+	width:650px;
+	padding: 0px 10px 20px 40px;
+}
+
+.headline{
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+input{
+	border-radius: 3px;
+	border: none;
+	height:20px;
+}
+
+select{
+	border-radius: 3px;
+	border: none;
+	height:20px;
+	width: 168px;
+}
+
+button{
+	background-color: brown;
+	color: white;
+	border: none;
+	padding: 10px 30px 10px 30px;
+	border-radius: 3px;
+}
+
+.footr button{
+	background-color: brown;
+	color: white;
+	border: none;
+	padding: 10px 100px 10px 100px;
+	border-radius: 3px;
+}
+
+button:hover{
+	background-color: #333;
+	color: #fff;
+	box-shadow:0 0 12px #33b5e5;
+}
+
+input:hover{ box-shadow:0 0 12px #33b5e5; }
+select:hover{ box-shadow:0 0 12px #33b5e5; }
+
+.Msg{
+	width: 650px;
+	color: #fff;
+	text-align: center;
+}
+
+::placeholder{
+	padding: 5px;
+	font-size:12px;
+}
+
+a{
+	font-size: 14px;
+	color: #000;
+}
+
+a:hover{
+	font-size: 14px;
+	color: #ddd;
+}
+
+p{
+	font-size:14px;
+}

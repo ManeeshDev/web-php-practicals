@@ -1,0 +1,123 @@
+*{
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3b525a;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+}
+/*a .menu:hover {
+	background-color: #FFD700;
+	color: black; 
+}*/
+
+li a:hover {
+	background-color: #FFD700;
+	color: black;
+}
+
+.menu.disabled {
+  	background-color: #3b525a;
+	color: #00FF7F;
+}
+
+table{
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+td {
+	text-align: center;
+	padding: 10px ;
+}
+
+input {
+  width: 230px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input.result {
+  width: 200px;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none; 				/*1px solid #ccc;*/
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:#FFEFD5;
+  
+}
+
+input[type=submit] {
+  width: 230px;
+  background-color:#008080;
+  color: white;
+  padding: 8px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color:#FFD700;
+	color: black;
+	font-weight: bold;
+}
+
+iframe.left {
+	border: 0;
+	width: 25%;
+	background-color:#F0FFFF ;
+}
+
+iframe.left:hover {
+	border: 0;
+	width: 25%;
+	background-color:#F0FFFF ;
+}
+
+iframe.right {
+	width: 75%;
+	background-color:#FFEFD5 ;
+	float: right;
+}
+
+iframe {
+	border: 0 none;
+	padding: 0;
+	height: 370px;
+	margin: 0;
+}
+
+#banner img {
+	max-width: 100%;
+	max-height: 150px;
+	width: auto;
+	display:block;
+	padding: 0;
+	margin: 0;
+}

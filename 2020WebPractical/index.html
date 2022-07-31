@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Registration Page</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script language="javascript">
+		function validate()
+		{
+			var mailformat = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+			if(form1.email.value.match(mailformat))
+				{
+					document.form1.email.focus();
+					return true;
+				}
+			else
+				{
+					alert("Please Enter an valid email address, 'example@mail.com'")
+					return false;
+				}
+
+			if(form1.nic.value.length!=10 ||form1.nic.value.indexOf("V")==-1)
+				{	
+					alert("Please enter Valid NIC no");
+					return false;
+				}
+			
+			if (isNaN(form1.pno.value)||(form1.pno.value.length!=10))
+				{	
+					alert("Please enter Valid Mobile Number");
+					return false;
+				}
+		}
+	</script>
+</head>
+<body>
+	<div class="banner">
+		<h1 align="center">Future IT</h1>
+	</div>
+	<br>
+	<div class="srch">
+	<form name="search" method="post" action="Search.php">
+		<input type="text" name="SearchId" id="SearchId" />
+		<input name="submit" type="submit" id="submit" formmethod="POST" autofocus="autofocus" title="Click hear" value="Search" />
+	</form>
+	</div>
+<br>
+	<form id="details" name="details" method="post" onSubmit="return validate()" action="AddStudent.php">
+		<table width="424" height="210" border="0" align="center" class="table">
+		  <tbody>
+		    <tr>
+		      <td height="48" colspan="2" align="center" valign="middle" style="font-size: 24px; font-style: normal; font-weight: bold; color:#fff;">Student Information</td>
+		    </tr>
+		    <tr>
+		      <td width="390" height="24" style="color: #000000">Registration Number</td>
+		      <td width="190" align="center"><input required type="text" name="regNo" id="regNo"></td>
+		    </tr>
+		    <tr>
+		      <td height="24" style="color: #000000">Name</td>
+		      <td align="center"><input required type="text" name="stname" id="stname"></td>
+		    </tr>
+		    <tr>
+		      <td height="24" style="color: #000000">Address</td>
+		      <td align="center"><input required type="text" name="address" id="address"></td>
+		    </tr>
+		    <tr>
+		      <td height="24" style="color: #000000">Date of Birth</td>
+		      <td align="center"><input required type="Date" name="dob" id="dob"></td>
+		    </tr>
+		    <tr>
+		      <td height="24" style="color: #000000">NIC</td>
+		      <td align="center"><input required type="text" name="nic" id="nic"></td>
+		    </tr>
+		    <tr>
+		      <td height="24" style="color: #000000">Mobile Number</td>
+		      <td align="center"><input required type="text" name="pno" id="pno"></td>
+		    </tr>
+		    <tr>
+		      <td height="24" style="color: #000000">Email</td>
+		      <td align="center"><input required type="email" name="email" id="email"></td>
+		    </tr>
+		    <tr>
+		      <td height="24" style="color: #000000">Course</td>
+		      <td align="center">
+		      	<select name="crsInfo" id="crsInfo">
+		      		<option value="None">Select Course</option>
+		      		<option value="ComputerApplicationAssistant">Computer Application Assistant</option>
+		      		<option value="ComputerGraphic">Computer Graphic</option>
+		      		<option value="ComputerHardware">Computer Hardware</option>
+		      		<option value="WebDevelopment">Web Development</option>
+		      	</select>
+		      </td>
+		    </tr>
+		    <tr>
+		      <td height="26" colspan="2" align="right">
+		        <input name="save" type="submit" id="save" title="Click hear" value="Save" >
+
+		        <a href="UpdateListStu.php">
+		        <input name="update" type="button" id="update" title="Click hear" value="Update"></a>
+				
+				<a href="DeleteListStu.php">
+		        <input name="delete" type="button" id="delete" title="Click hear" value="Delete"></a>
+
+		        <input name="reset" type="reset" id="reset" title="Click hear" value="Reset">
+		 		</td>
+		    </tr>
+		    <tr>
+		    	<td colspan="2" align="right">
+		    		<h5><a href="DisplayStu.php">Registered Students</a> &nbsp;&nbsp;</h5>
+		    	</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</form>
+
+	<footer class="footer">
+		<p> &copy; Copyright 2020Future IT</p>
+	</footer>
+</body>
+</html>

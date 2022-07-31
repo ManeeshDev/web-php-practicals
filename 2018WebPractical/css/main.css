@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-family: arial;
+}
+
+.top{
+	top: 0;
+	position: sticky; /*sticky when top 0*/
+	width: 100%;
+	background-color: rgba(0,0,0,1);
+}
+
+.top ul{
+	margin: 0 auto;
+	list-style-type: none;
+	padding: 20px;
+	background-color: transparent;
+	margin: 0 auto;
+	text-align: center; /*center list item*/
+}
+
+.top ul li{
+	display: inline-flex;
+	padding: 0;
+	margin-right: 0 auto;
+	margin-left: 0 auto;
+}
+
+.link{
+	text-decoration: none;
+	padding: 25px;
+	width: 130px;
+	margin:-2px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.link:hover{
+	background-color: blue;
+	color: white;
+}
+
+.banner{
+	padding: 25px;
+	margin: 0 auto;
+	padding: 2px;
+	justify-content: center; /*to center */
+	display: flex;				/*img inside the div*/
+}
+
+.banner img {
+	width: 50%;
+}
+
+.container{
+	width: 90%;
+	padding: 25px;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+}
+
+.form{
+	/*border: 1px solid black;*/
+	width: 75%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.table{
+	border: 1px solid black;
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: rgba(45,230,210,0.4);
+	margin-top: 50px;
+	margin-bottom: auto;
+}
+
+h1{
+	text-align: center;
+	font-size: 24px;
+}
+
+.table tr td{
+	padding: 5px;
+	margin-left: 15px;
+	padding-left: 10px;
+
+}
+
+.radio{
+	width: 80%;
+	justify-content: center;
+	display: flex;
+	border:1px solid white;
+	float: left;
+	padding: 20px;
+}
+
+fieldset{
+	padding: 10px;
+}
+
+.captcha{
+	padding: 10px;
+}
+
+.span input[type=text],.span input[type=text]:focus,.span input[type=text]:hover{
+	border-style: none;
+	border-bottom: 1px solid white;
+	background-color: transparent;
+	outline-style: none;
+	color: #fff;
+	float: right;
+	width: 70%;
+}
+
+.btn{
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+input[type=submit],input[type=reset]{
+	margin: 0 10px 0 10px;
+	/*border: 1px solid black;*/
+	border: none;
+	background-color: gold;
+	width: 100px;
+	line-height: 35px;
+	padding: 2px;
+	border-radius: 2px;
+	color: #000;
+}
+input[type=submit]:hover,input[type=reset]:hover{
+	background-color: tomato;
+	font-weight: bold;
+}
+
+
+input[type=text],input[type=text]:focus,input[type=email],input[type=email]:focus{
+	border-style: none;
+	border-bottom: 1px solid white;
+	background-color: transparent;
+	color: #fff;
+	width: 90%;
+	height: 40px;
+	outline-style: none;
+	padding: 0px;
+	cursor: text;
+	font-size: 20px;
+	font-family: Signika;
+}
+
+input[type=radio],input[type=radio]:focus{
+	border-style: none;
+	border-bottom: 1px solid white;
+	background-color: transparent;
+	padding: 10px;
+}
+
+.utable{
+	width: 40%;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: rgba(100,100,200,0.6);
+}
+
+.utable tr td,th{
+	padding: 20px;
+	text-align: center;
+}
+
+.utable tr th{
+	background-color: rgba(5,5,5,0.5);
+}
+
+.utable tr:nth-child(even){
+	background-color: rgba(132,172,132,0.2);
+}
+
+.utable tr:nth-child(even):hover{
+	background-color: rgba(132,152,132,0.3);
+}
+
+.utable tr td:nth-child(even),th:nth-child(even){
+	text-align: left;
+}
+
+.footer{
+	position: fixed;
+    bottom: 0;
+    background-color: #555;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}

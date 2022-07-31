@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+		body{
+			background-image: url(images/background.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			color: white;
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form name="FrmRegister" class="form" method="post" action="include/register.php" onsubmit="return validate()">
+			<table class="table">
+				<tr>
+					<td colspan="3"><h1> User Registration Form </h1></td>
+				</tr>
+				<tr>
+					<td>First Name</td>
+					<td colspan="2">
+						<input type="text" name="fname" id="fname" required>
+					</td>
+
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td colspan="2"><input type="text" name="lname" id="lname" required></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td colspan="2"><input type="email" name="email" id="email" required></td>
+				</tr>
+				<tr>
+					<td>Contact No.</td>
+					<td colspan="2">
+						<input type="text" name="tele" id="tele" required>
+						<div style="display: none;color: red;" name="Terr" id="Terr"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td colspan="2">
+						<div class="radio">
+							<input type="radio" name="gender" id="male" value="Male" required> &nbsp; Male
+							&emsp;<input type="radio" name="gender" id="female" value="Female" required> &nbsp; Female
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<div class="captcha">
+							<fieldset>
+								<legend> CAPTCHA </legend>
+								<p>This question is for testing whether you are a human visitor and prevent automated Spam submission</p>
+								<div class="container">
+									<img src="images/captcha.png" alt="CAPTCHA">
+								</div>
+								<p>
+									Enter the characters  
+										<span class="span"> 
+											<input type="text" name="captcha" id="captcha" onfocus="
+											" required> 
+										</span>
+									<br>
+									shown in the image
+								</p>
+							</fieldset>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<div class="btn">
+							<input type="submit" value="Submit" name="submit" />
+							<input type="reset" value="Reset" name="reset" onclick="resetmsg()" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<script src="js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+First import database	Folder - Database > flora_ordering.sqlHow do I import a database to phpMyAdmin?Step 1 - Open your database in phpMyAdmin. 	Read our guide on how to access your database if you don't know how to do this.Step 2 - Click Databases in the top-menu.Step 3 - Click Import.Step 4 - Choose file and click Go. ...Step 5 - You're done.

@@ -1,0 +1,86 @@
+
+body{
+	background-color: lightblue;
+}
+
+html{
+	font-family: arial;
+}
+
+.banner{
+	padding: 10px;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;		
+	background-color: #999;	
+}
+
+
+.table{
+	border: 1px solid black;
+	width: 50%;
+	margin: 0 auto;
+	/*padding: 10px;*/
+	background-color: rgba(0,0,0,0.5);
+	/*margin-top: 50px;*/
+	margin-bottom: auto;
+}
+
+h1{
+	text-align: center;
+	font-size: 24px;
+}
+.srch{
+ 	width: 300px;
+ 	margin-left: 750px;
+	padding-left: 10px;
+}
+
+.table tr td{
+	/*padding: 5px;*/
+	margin-left: 15px;
+	padding-left: 10px;
+
+}
+
+
+.table input[type=submit],input[type=reset],input[type=button]{
+	margin: 0 10px 0 10px;
+	/*border: 1px solid black;*/
+	border: none;
+	background-color: gold;
+	width: 100px;
+	line-height: 20px;
+	padding: 2px;
+	border-radius: 2px;
+	color: #000;
+}
+.table input[type=submit]:hover,input[type=reset]:hover,input[type=button]:hover{
+	background-color: tomato;
+	font-weight: bold;
+}
+
+
+.table input[type=text],input[type=date],.table input[type=text]:focus,input[type=email],input[type=email]:focus{
+	border-style: none;
+	border-bottom: 1px solid white;
+	background-color: transparent;
+	color: #fff;
+	width: 90%;
+	height: 25px;
+	outline-style: none;
+	padding: 0px;
+	cursor: text;
+	font-size: 20px;
+	font-family: Signika;
+}
+
+
+.footer{
+	position: fixed;
+    bottom: 0;
+    background-color: #555;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
